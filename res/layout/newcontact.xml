@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ab_solid_dark_holo" >
+
+        <ImageButton
+            android:id="@+id/ic_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/ic_background"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:src="@drawable/ic_menu_mark" />
+
+        <ImageButton
+            android:id="@+id/ic_discard"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/ic_background"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:src="@drawable/ic_menu_close_clear_cancel" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="New Contact"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/actionbar" >
+
+        <LinearLayout
+            android:id="@+id/formm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/name_lb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="20dip"
+                android:text="Name:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/name_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/field_lb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="20dip"
+                android:text="Field:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Spinner
+                android:id="@+id/field_sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip" />
+
+            <LinearLayout
+                android:id="@+id/newfield"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/fieldname_lb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="20dip"
+                    android:text="Field name:"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/fieldname_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/value_lb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="20dip"
+                android:text="Value:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/value_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

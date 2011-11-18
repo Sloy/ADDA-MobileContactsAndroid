@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/ab_solid_dark_holo"
+        android:paddingLeft="10dip" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:text="Contacts"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ImageButton
+            android:id="@+id/ic_add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/ic_background"
+            android:src="@drawable/ic_menu_add"
+            android:paddingRight="5dip"
+            android:paddingLeft="5dip" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/contacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- Preview: listitem=@android:layout/simple_list_item_1 -->
+    </ListView>
+
+</LinearLayout>

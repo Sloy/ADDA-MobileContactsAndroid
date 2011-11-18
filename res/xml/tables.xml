@@ -1,0 +1,10 @@
+<database name="contacts_db" version="1">
+    <table name="contacts" to-string="%name%">
+        <field name="name" obligatory="true" type="text" size="128"/>
+    </table>
+    <table name="info" to-string="%type%:%value%">
+        <field name="contact_id" obligatory="true" type="foreign-key"/>
+        <field name="type" obligatory="true" type="text" size="128"/>
+        <field name="value" obligatory="true" type="name" size="128"/>
+    </table>
+</database>

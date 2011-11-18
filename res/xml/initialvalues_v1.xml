@@ -1,0 +1,30 @@
+<values>
+    <row table="contacts" id="1">
+        <field name="name" value="Rafa" />
+    </row>
+    <row table="contacts" id="2">
+        <field name="name" value="Fran" />
+    </row>
+    
+    <row table="info" id="1">
+    	<field name="contact_id" value="1" />
+        <field name="type" value="Mobile" />
+        <field name="value" value="YYYYYYYY" />
+    </row>
+    <row table="info" id="2">
+    	<field name="contact_id" value="1" />
+        <field name="type" value="FonYou" />
+        <field name="value" value="668880583" />
+    </row>
+    <row table="info" id="3">
+    	<field name="contact_id" value="1" />
+        <field name="type" value="City" />
+        <field name="value" value="Seville" />
+    </row>
+    
+    <row table="info" id="4">
+    	<field name="contact_id" value="2" />
+        <field name="type" value="Mobile" />
+        <field name="value" value="XXXXXXXX" />
+    </row>
+</values>

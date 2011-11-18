@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MobileContactsAndroid</string>
+	<string-array name="fields_array">
+        <item>Mobile</item>
+        <item>Landline</item>
+        <item>Other</item>
+    </string-array>
+</resources>
